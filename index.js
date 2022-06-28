@@ -4,6 +4,8 @@ const topSlider = document.getElementById('top');
 const bottomSlider = document.getElementById('bottom');
 const shape = document.getElementById('shape');
 const display = document.getElementById('display');
+const button = document.getElementById('copy-text');
+const alert = document.getElementById('alert');
 
 let values = `${topSlider.value}% ${100 - topSlider.value}% ${
   100 - bottomSlider.value
@@ -52,4 +54,12 @@ topSlider.oninput = () => {
   }% ${100 - leftSlider.value}%`;
   shape.style.borderRadius = values;
   display.innerHTML = values;
+};
+
+button.onclick = () => {
+  navigator.clipboard.writeText(display.innerHTML);
+  alert.style = 'opacity: 1;';
+  setTimeout(() => {
+    alert.style = 'opacity: 0;';
+  }, 2500);
 };

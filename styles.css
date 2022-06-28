@@ -28,3 +28,33 @@
 .slider:hover {
   opacity: 1;
 }
+
+.copy-text {
+  border-radius: 0;
+  border: none;
+  background-color: lightblue;
+  color: navy;
+  opacity: 0.7;
+  transition: 0.2s opacity;
+  width: 100px;
+  text-align: center;
+}
+
+.copy-text:hover {
+  opacity: 1;
+}
+
+.alert {
+  position: absolute;
+  z-index: 1;
+  left: 40%;
+  top: 40%;
+  text-align: center;
+  background: navy;
+  color: white;
+  width: 20%;
+  padding: 3% 0;
+  border-radius: 30px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
