@@ -3,4 +3,4 @@ A user may change the values of the border-radius on the shape and view the resu
 
 TODO:
 -general styling and positioning
--allow the user to copy the current border-radius settings
+-fix the stupid length of the left and right slider

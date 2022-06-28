@@ -9,13 +9,27 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="shape" id="shape"></div>
-    <input type="range" min="0" max="100" class="slider" id="top" />
-    <input type="range" min="0" max="100" class="slider" id="left" />
-    <input type="range" min="0" max="100" class="slider" id="bottom" />
-    <input type="range" min="0" max="100" class="slider" id="right" />
-    <div class="display" id="display"></div>
-    <button class="copy-text" id="copy-text">Copy</button>
-    <span class="alert" id="alert">Copied to clipboard</span>
+    <div class="content">
+      <div class="shape-container">
+        <div class="shape" id="shape"></div>
+        <div class="top-container">
+          <input type="range" min="0" max="100" class="slider" id="top" />
+        </div>
+        <div class="left-container">
+          <input type="range" min="0" max="100" class="slider" id="left" />
+        </div>
+        <div class="bottom-container">
+          <input type="range" min="0" max="100" class="slider" id="bottom" />
+        </div>
+        <div class="right-container">
+          <input type="range" min="0" max="100" class="slider" id="right" />
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="display" id="display"></div>
+        <button class="copy-text" id="copy-text">Copy</button>
+        <span class="alert" id="alert">Copied to clipboard</span>
+      </div>
+    </div>
   </body>
 </html>

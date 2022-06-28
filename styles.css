@@ -1,13 +1,76 @@
+.flex-container {
+  display: flex;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shape-container {
+  padding: 30px;
+  display: grid;
+  grid-template:
+    '. top .' 25px
+    'left shape right' 400px
+    '. bottom .' 25px / 25px 400px 25px;
+}
+
 .shape {
   width: 400px;
   height: 400px;
   background-color: aquamarine;
+  grid-area: shape;
+}
+
+.top-container {
+  grid-area: top;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.left-container {
+  grid-area: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left {
+  transform: rotate(90deg);
+}
+
+.bottom-container {
+  grid-area: bottom;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.right-container {
+  grid-area: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#right {
+  transform: rotate(90deg);
 }
 
 .slider {
   -webkit-appearance: none;
   width: 400px;
-  height: 15px;
+  height: 20px;
   background: lightblue;
   outline: none;
   opacity: 0.7;
