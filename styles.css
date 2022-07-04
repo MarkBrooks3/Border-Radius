@@ -41,12 +41,14 @@
 .left-container {
   grid-area: left;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: max-content;
 }
 
 #left {
-  transform: rotate(90deg);
+  transform: rotate(90deg) translate(0, -20px);
+  transform-origin: top left;
 }
 
 .bottom-container {
@@ -59,12 +61,14 @@
 .right-container {
   grid-area: right;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: max-content;
 }
 
 #right {
-  transform: rotate(90deg);
+  transform: rotate(90deg) translate(0, -20px);
+  transform-origin: top left;
 }
 
 .slider {
@@ -75,8 +79,6 @@
   outline: none;
   opacity: 0.7;
   transition: opacity 0.2s;
-  display: block;
-  margin-top: 20px;
 }
 
 .slider::-webkit-slider-thumb {
